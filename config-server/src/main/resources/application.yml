@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Huzy8080/config_repo/
+server:
+  port: 1201
+
+#配置管理中心本身也可以作为一个服务，注册到eureka上面，实现高可用
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/

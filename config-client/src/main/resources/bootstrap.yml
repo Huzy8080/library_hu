@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      #如果配置管理中心没有注册到eureka上，那么需要直接指定访问地址
+#      uri: http://localhost:1201/
+      profile: default
+      #分支
+      label: master
+      #下面两个属性会使本服务在eureka上寻找配置中心去获取配置
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+
+server:
+  port: 2001
+
+#注册到eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
