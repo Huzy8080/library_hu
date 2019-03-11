@@ -9,6 +9,7 @@ public class ConcreteSubject implements Subject{
 
     @Override
     public void registryObserver(Observer o) {
+        System.out.println(o.getName() + "注册...");
         observerList.add(o);
     }
 
