@@ -1,10 +1,10 @@
-package com.hotmail.huzy8080.library_hu.Pattern.观察者模式;
+package com.hotmail.huzy8080.library_hu.Pattern.Observer;
 
-public class ConcreteObserver1 implements Observer {
+public class ConcreteObserver2 implements Observer {
     String name;
     Subject subject;
 
-    public ConcreteObserver1(Subject subject, String name) {
+    public ConcreteObserver2(Subject subject, String name) {
         this.name = name;
         this.subject = subject;
         this.subject.registryObserver(this);

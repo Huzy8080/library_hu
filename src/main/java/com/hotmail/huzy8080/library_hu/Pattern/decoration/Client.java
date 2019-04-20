@@ -7,7 +7,6 @@ public class Client {
         System.out.println(new Mocka(new Coffee()).description());
         System.out.println("一杯磨卡双倍奶昔咖啡...");
         System.out.println(new Mocka(new Shake(new Shake(new Coffee()))).description());
-
     }
 
 
